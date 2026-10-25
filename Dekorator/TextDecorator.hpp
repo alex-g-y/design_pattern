@@ -10,6 +10,7 @@ class TextDecorator : public ITextview
     public:
 
     TextDecorator(ITextview*);
-    
+    ~TextDecorator();
+
 
 };

@@ -1,16 +1,25 @@
 #include "Plaintextview.hpp"
 
+
+Plaintextview::Plaintextview(std::string text)
+{
+    m_text = text;
+}
 void Plaintextview::render()
 {
-    std::cout << "(normal): " << m_text << std::endl;
+    std::cout << "(normal): " << m_text;
 }
 
-void Plaintextview::setText(std::string newText)
+/**
+ * void Plaintextview::setText(std::string newText)
 {
     m_text = newText;
 }
 
-void Plaintextview::displayText(std::string text)
+ */
+
+void Plaintextview::displayText()
 {
-    std::cout << text << std::endl;
+    std::cout << this->m_text << std::endl;
 }
+
