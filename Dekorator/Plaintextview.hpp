@@ -10,5 +10,8 @@ class Plaintextview : public ITextview
     public:
 
     void render() override;
+    void setText(std::string);
+    void displayText(std::string);
+
         
 };
