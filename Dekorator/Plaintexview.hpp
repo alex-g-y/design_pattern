@@ -10,5 +10,5 @@ class Plaintextview : public ITextview
     public:
 
     void render() override;
-    
+        
 };
