@@ -11,6 +11,7 @@ class TextDecorator : public ITextview
 
     TextDecorator(ITextview*);
     ~TextDecorator();
+    virtual void modify() = 0;
 
 
 };

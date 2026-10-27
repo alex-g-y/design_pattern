@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <fstream>
 
 
 class ITextview
@@ -8,5 +9,5 @@ class ITextview
     public:
 
     virtual ~ITextview() = default;
-    virtual void render() = 0;
+    virtual std::string  render() = 0;
 };

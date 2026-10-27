@@ -6,5 +6,6 @@ class BoldDecorator : public TextDecorator
 {
     public:
     BoldDecorator(ITextview*);
-    void render() override;
+    std::string render() override;
+    void modify() override;
 };

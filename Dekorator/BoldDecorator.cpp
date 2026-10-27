@@ -3,8 +3,10 @@
 BoldDecorator::BoldDecorator(ITextview* _inner) : TextDecorator(_inner)
 {}
 
-void BoldDecorator::render()
+std::string BoldDecorator::render()
 {
    inner->render();
    std::cout << " [Text now in Bold]";
 }
+
+

@@ -3,23 +3,18 @@
 
 Plaintextview::Plaintextview(std::string text)
 {
-    m_text = text;
+      m_text = text;
+       std::ofstream file("maPage.html");
+     file << text ;
+  
 }
-void Plaintextview::render()
+   
+
+std::string  Plaintextview::render()
 {
-    std::cout << "(normal): " << m_text;
+    return m_text;
 }
 
-/**
- * void Plaintextview::setText(std::string newText)
-{
-    m_text = newText;
-}
 
- */
 
-void Plaintextview::displayText()
-{
-    std::cout << this->m_text << std::endl;
-}
 
