@@ -1,7 +1,7 @@
 #pragma once
 #include "Held.hpp"
 
-class HeldDekorator
+class HeldDekorator : public Held 
 {
     protected:
 
@@ -10,11 +10,12 @@ class HeldDekorator
     public:
 
         HeldDekorator(Held*);
-        HeldDekorator();
-        virtual  int lebenspunkte_D() const;
-        virtual  int mana_D() const ;
-        virtual  std::vector<std::string> ausruestung_D() const ;
+         
 
-        virtual void  addAusruestung() const;
-        virtual ~HeldDekorator();
+        
+          int lebenspunkte() const override;
+          int mana() const override;
+          std::vector<std::string> ausruestung() const override;
+        
+         virtual ~HeldDekorator();
 };

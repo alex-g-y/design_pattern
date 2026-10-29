@@ -28,7 +28,7 @@ class Held
        virtual void displayEigenschaften() const;
     
 
-        void addAusruestung(std::string);
+        //void addAusruestung(std::string);
          
     
 };

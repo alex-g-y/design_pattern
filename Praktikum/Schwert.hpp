@@ -9,8 +9,9 @@ class Schwert : public HeldDekorator
 
     public:
 
-        Schwert(Held* ptr_h);
-        void addAusruestung() const override;
+        Schwert(Held*);
+        std::vector<std::string> ausruestung()  const override;
+        
 
 
 };

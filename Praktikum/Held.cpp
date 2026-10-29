@@ -5,10 +5,9 @@ Held::Held(int lebenspunkte, int mana):lebenspunkte_(lebenspunkte),mana_(mana)
 
 }
 
-Held::Held()
-{
-    
-}
+Held::Held(){}
+
+
 
 std::vector<std::string> Held::ausruestung() const 
 {
@@ -37,8 +36,12 @@ void Held::displayEigenschaften() const
     std::cout << std::endl;
 }
 
+/**
+ *                      void Held::addAusruestung(std::string ausruestung)
+                        {
+                            ausruestung_.push_back(ausruestung);
+                        }
+ * 
+ */
 
-void Held::addAusruestung(std::string ausruestung)
-{
-    ausruestung_.push_back(ausruestung);
-}
+
